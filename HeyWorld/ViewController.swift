@@ -9,7 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet var helloLabel: UILabel!
+    @IBAction func helloButton(sender: AnyObject) {
+        helloLabel.text = "Hello World"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
